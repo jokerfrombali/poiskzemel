@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Поиск Земель - аналитика выгодных земельных участков</title>
+  <meta name="description" content="Сервис анализирует ЦИАН, Авито и открытые данные, чтобы находить земельные участки с потенциалом прибыли и рекомендациями к покупке." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Поиск Земель">
+      <span class="brand-mark" aria-hidden="true"><span class="brand-mark-land"></span><span class="brand-mark-coin"></span></span>
+      <span>
+        <strong>Поиск Земель</strong>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#product">Продукт</a>
+      <a href="#sources">Источники</a>
+      <a href="#scoring">Оценка</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="login-link" href="cabinet.html">
+        <span class="login-icon" aria-hidden="true"></span>
+        Войти в личный кабинет
+      </a>
+      <a class="header-cta" href="#contacts">Получить доступ</a>
+    </div>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav aria-label="Мобильная навигация">
+      <a href="#product">Продукт</a>
+      <a href="#sources">Источники</a>
+      <a href="#scoring">Оценка</a>
+      <a href="cabinet.html">Войти в личный кабинет</a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>Умный поиск земли по всей России</h1>
+          <p class="hero-lead">Мы работаем только с ликвидными локациями России и ищем участки, которые продаются заметно ниже рынка: из-за большого размера, слабой упаковки объявления или сложностей с документами.</p>
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="#product">Как работает</a>
+          </div>
+          <dl class="hero-metrics">
+            <div>
+              <dt>Источники</dt>
+              <dd>ликвидные места</dd>
+            </div>
+            <div>
+              <dt>Скоринг</dt>
+              <dd>AI + эксперт</dd>
+            </div>
+            <div>
+              <dt>Вывод</dt>
+              <dd>покупка ниже рынка</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual hero-visual-photo" aria-label="Специалисты оценивают земельный участок">
+          <img src="assets/poiskzemel/land-investors.png" alt="Специалисты оценивают земельный участок с аналитическими слоями" />
+          <div class="floating-chip chip-top">
+            <span>Скоринг</span>
+            <strong>84/100</strong>
+          </div>
+          <div class="signal-card">
+            <span>Потенциал</span>
+            <strong>+27%</strong>
+            <small>ниже медианы района</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="product">
+      <div class="section-head">
+        <p class="eyebrow">Продукт</p>
+        <h2>Ищем не просто землю, а понятный сценарий перепродажи</h2>
+        <p>Система отбирает предложения в заранее выбранных ликвидных местах, ищет дисконт к рынку и показывает, где можно купить сильно ниже рынка, а затем продать в розницу чуть ниже рынка.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card service-card-featured">
+          <span class="card-icon search-icon" aria-hidden="true"></span>
+          <h3>Ликвидные зоны</h3>
+          <p>Работаем не по всей карте подряд, а по местам, где есть спрос, розничный покупатель и понятная скорость перепродажи.</p>
+        </article>
+        <article class="service-card">
+          <span class="card-icon compare-icon" aria-hidden="true"></span>
+          <h3>Ниже рынка</h3>
+          <p>Ищем объявления с дисконтом: большие участки, недооцененные карточки, срочные продажи или объекты со сложностями в документах.</p>
+        </article>
+        <article class="service-card">
+          <span class="card-icon risk-icon" aria-hidden="true"></span>
+          <h3>AI-скоринг</h3>
+          <p>Искусственный интеллект оценивает маржу, ликвидность, риски, документы, спрос и вероятность быстрой розничной продажи.</p>
+        </article>
+        <article class="service-card">
+          <span class="card-icon decision-icon" aria-hidden="true"></span>
+          <h3>Экспертный торг</h3>
+          <p>Специалист по продаже земли вместе с AI готовит предложение еще ниже, чтобы увеличить запас маржи до перепродажи.</p>
+        </article>
+      </div>
+
+      <div class="strategy-strip">
+        <article>
+          <span>01</span>
+          <strong>Покупаем сильно ниже рынка</strong>
+          <p>Сначала находим причину дисконта и считаем, можно ли ее монетизировать после проверки.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Понимаем розничный выход</strong>
+          <p>Смотрим, за какую цену участок можно продать быстро, оставаясь чуть ниже рынка.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Зарабатываем на аналитике</strong>
+          <p>Маржа появляется не от ожидания роста, а от точного входа в ликвидную локацию.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-field" id="sources">
+      <div class="field-layout">
+        <div class="field-copy">
+          <p class="eyebrow">От объявления к земле</p>
+          <h2>Сначала алгоритм находит сигнал, затем команда проверяет участок на месте</h2>
+          <p>Система соединяет маркетплейсы, карту, рыночные цены и полевую проверку. В итоге инвестор видит не просто объявление, а гипотезу: почему объект дешевле, как снизить цену и кому его перепродать.</p>
+          <div class="field-pills">
+            <span>ЦИАН и Авито</span>
+            <span>Кадастровая логика</span>
+            <span>Торг специалиста</span>
+          </div>
+        </div>
+
+        <div class="field-visual">
+          <img src="assets/poiskzemel/listing-to-land.png" alt="Коллаж с объявлениями, кадастровой картой и проверкой земельного участка" />
+          <div class="field-glass-card">
+            <span>Сигнал сделки</span>
+            <strong>ниже рынка на 21%</strong>
+            <small>объект передан в детальную проверку</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="source-panel">
+        <div class="source-row">
+          <span>01</span>
+          <strong>Рынок</strong>
+          <p>Собираем объявления, цену, площадь, дату публикации и историю изменений.</p>
+        </div>
+        <div class="source-row">
+          <span>02</span>
+          <strong>Локация</strong>
+          <p>Сравниваем окружение, подъезды, спрос, инфраструктуру и конкурентов рядом.</p>
+        </div>
+        <div class="source-row">
+          <span>03</span>
+          <strong>Решение</strong>
+          <p>Выдаем короткий вывод: проверять, торговаться, резервировать или исключить.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-invest" id="scoring">
+      <div class="investment-head">
+        <div>
+          <p class="eyebrow">Инвестиционный профиль</p>
+          <h2>Каждый участок проходит через скоринг сделки</h2>
+        </div>
+        <p>Вместо длинных таблиц система собирает короткий инвестиционный паспорт: цена входа, риск документов, ликвидность места, сценарий розничной перепродажи и следующий шаг для переговоров.</p>
+      </div>
+
+      <div class="investment-board">
+        <div class="deal-card featured-deal">
+          <div class="deal-top">
+            <span class="badge">Лучший сигнал недели</span>
+            <span class="score">91/100</span>
+          </div>
+          <h3>18 соток под ИЖС рядом с новой дорогой</h3>
+          <div class="price-row">
+            <strong>3,12 млн ₽</strong>
+            <span>потенциал +34%</span>
+          </div>
+          <div class="land-preview" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p>Рекомендация: проверить документы, выйти на продавца и подготовить оффер ниже текущей цены с запасом под розничную перепродажу.</p>
+        </div>
+
+        <div class="pipeline">
+          <article>
+            <span>01</span>
+            <strong>Маржа</strong>
+            <p>Считаем разницу с рынком и запас после торга.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Ликвидность</strong>
+            <p>Проверяем спрос, срок продажи и конкурентов рядом.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Риски</strong>
+            <p>Подсвечиваем назначение, доступ, коммуникации и красные флаги.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Перепродажа</strong>
+            <p>Считаем розничный выход: продать быстро и чуть ниже рынка.</p>
+          </article>
+        </div>
+
+        <div class="portfolio-card">
+          <span>Матрица решения</span>
+          <strong>торговаться после проверки</strong>
+          <div class="decision-orbit" aria-hidden="true">
+            <i></i>
+            <b></b>
+          </div>
+          <div class="decision-list">
+            <div>
+              <span>Выгода</span>
+              <strong>высокая</strong>
+            </div>
+            <div>
+              <span>Риск</span>
+              <strong>средний</strong>
+            </div>
+            <div>
+              <span>Выход</span>
+              <strong>розница чуть ниже рынка</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta" id="contacts">
+      <div class="cta-card">
+        <div class="cta-copy">
+          <p class="eyebrow">Доступ к сервису</p>
+          <h2>Получите подборку участков в ликвидных местах</h2>
+          <p>Оставьте контакты, и мы покажем объекты ниже рынка, AI-скоринг, слабые места документов и рекомендуемую стратегию торга.</p>
+          <div class="cta-flow">
+            <span>Локация</span>
+            <span>AI-скоринг</span>
+            <span>Оффер ниже рынка</span>
+          </div>
+        </div>
+        <div class="access-card">
+          <div class="access-card-head">
+            <span>Заявка на доступ</span>
+            <strong>3 минуты</strong>
+          </div>
+          <form class="lead-form" action="success.html" method="get">
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Как к вам обращаться" required />
+            </label>
+            <label>
+              <span>Телефон или Telegram</span>
+              <input type="text" name="contact" placeholder="+7 или @username" required />
+            </label>
+            <label>
+              <span>Регион поиска</span>
+              <input type="text" name="region" placeholder="Например, Московская область" />
+            </label>
+            <button class="btn btn-primary" type="submit">
+              <span class="icon icon-arrow" aria-hidden="true"></span>
+              Получить доступ
+            </button>
+          </form>
+          <div class="access-note">Покажем, где покупать сильно ниже рынка и какой розничный выход считать реалистичным.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><span class="brand-mark-land"></span><span class="brand-mark-coin"></span></span>
+      <span>
+        <strong>Поиск Земель</strong>
+      </span>
+    </div>
+    <p>Аналитический софт для предварительного поиска земельных участков. Финальная покупка требует юридической и технической проверки объекта.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

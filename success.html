@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Заявка отправлена - Поиск Земель</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        linear-gradient(135deg, rgba(31, 182, 122, 0.14), transparent 36%),
+        var(--navy);
+    }
+
+    .success-box {
+      width: min(560px, 100%);
+      padding: 38px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 10px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .success-box .brand {
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+
+    .success-box h1 {
+      margin-bottom: 12px;
+      color: var(--navy);
+      font-size: clamp(32px, 6vw, 46px);
+      line-height: 1.05;
+    }
+
+    .success-box p {
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <main class="success-box">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><span class="brand-mark-land"></span><span class="brand-mark-coin"></span></span>
+      <span>
+        <strong>Поиск Земель</strong>
+      </span>
+    </div>
+    <h1>Заявка отправлена</h1>
+    <p>Мы подготовим демо-подборку и свяжемся с вами по указанному контакту.</p>
+    <a class="btn btn-primary" href="/">Вернуться на главную</a>
+  </main>
+</body>
+</html>
